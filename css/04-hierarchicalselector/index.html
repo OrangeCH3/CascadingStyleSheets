@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hierarchical Selector</title>
+
+    <style>
+        /*p{
+            color: darkorange;
+        }*/
+
+        /* 后代选择器 */
+        /*body p{
+            color: blue;
+        }*/
+
+        /* 子选择器 */
+        /*body>p{
+            color: violet;
+        }*/
+
+        /* 相邻兄弟选择器(对下不对上) */
+        /*.active + p{
+            color: violet;
+        }*/
+
+        /* 通用选择器(对下不对上) */
+        .active~p{
+            color: crimson;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<p>paragraph0</p>
+<p class="active">paragraph1</p>
+<p>paragraph2</p>
+<p>paragraph3</p>
+<ul>
+    <li>
+        <p>subparagraph4</p>
+    </li>
+    <li>
+        <p>subparagraph5</p>
+    </li>
+    <li>
+        <p>subparagraph6</p>
+    </li>
+</ul>
+
+</body>
+</html>
