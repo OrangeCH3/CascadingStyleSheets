@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Structural Pseudo-Class Selector</title>
+
+    <style>
+        ul li:first-child{
+            color: crimson;
+        }
+
+        ul li:last-child{
+            color: blue;
+        }
+
+        /* 选中p标签的父级，在父级下找第一个 */
+        p:nth-child(1){
+            color: darkred;
+        }
+
+        /* 选中p标签的父级，在父级下找p类型标签的第二个 */
+        p:nth-of-type(2){
+            color: deeppink;
+        }
+    </style>
+</head>
+
+<body>
+
+<p>paragraph1</p>
+<p>paragraph2</p>
+<p>paragraph3</p>
+
+<ul>
+    <li>list1</li>
+    <li>list2</li>
+    <li>list3</li>
+</ul>
+
+</body>
+</html>
