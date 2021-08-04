@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Selector</title>
+
+    <style>
+        .demo a{
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            background: pink;
+            text-align: center;
+            line-height: 50px;
+            text-decoration: none;
+            color: blue;
+            margin-right: 10px;
+        }
+
+        /* 属性选择器 */
+        /*a[id=first]{
+            background: violet;
+        }*/
+
+        /* 属性选择器
+           "*="  -> 包含等号后面的值
+           "^="  -> 以等号后值开头的匹配项
+           "$="  -> 以等号后值结尾的匹配项
+         */
+        a[class*="links"]{
+            background: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+
+<p class="demo">
+    <a href="https://www.baidu.com/" class="links item first" id="first">A</a>
+    <a href="https://www.baidu.com/" class="links item">B</a>
+    <a href="https://www.baidu.com/" class="links item">C</a>
+    <a href="https://www.baidu.com/" class="links item">D</a>
+    <a href="https://www.baidu.com/" class="links item">E</a>
+    <a href="https://www.baidu.com/" class="links item">F</a>
+    <a href="https://www.baidu.com/" class="links item last" id="last">G</a>
+</p>
+
+</body>
+</html>
