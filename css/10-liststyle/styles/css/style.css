@@ -1,0 +1,38 @@
+#nav{
+    width: 300px;
+    background: darkgray;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 3em;
+    line-height: 30px;
+    background: rebeccapurple url("../../images/1.png") 265px no-repeat;
+    /*background-image: url("../../images/1.png");*/
+}
+
+/*ul{*/
+/*    background: darkgray;*/
+/*}*/
+
+ul li{
+    height: 30px;
+    /* 去掉列表前的点点 */
+    list-style: none;
+    text-indent: 1em;
+    background: url("../../images/2.png") 230px no-repeat;
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #000000;
+}
+
+a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+
