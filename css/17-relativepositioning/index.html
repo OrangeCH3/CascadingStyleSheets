@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Relative Positioning</title>
+
+    <!-- 相对定位 -->
+    <style>
+        body{
+            padding: 20px;
+        }
+
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+
+        #father{
+            border: 1px solid palevioletred;
+            padding: 0;
+        }
+
+        #first{
+            background-color: darkgray;
+            border: 1px dashed palevioletred;
+
+            /* 相对定位：上下左右 */
+            position: relative;
+            /*top: -20px;*/
+            /*left: 20px;*/
+        }
+        #second{
+            background-color: darkgray;
+            border: 1px dashed palevioletred;
+        }
+        #third{
+            background-color: darkgray;
+            border: 1px dashed palevioletred;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="father">
+    <div id="first" >First Div</div>
+    <div id="second" >Second Div</div>
+    <div id="third" >Third Div</div>
+</div>
+
+</body>
+</html>

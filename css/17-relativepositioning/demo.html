@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Block Position</title>
+
+    <style>
+      #box{
+        width: 600px;
+        height: 600px;
+        padding: 10px;
+        border: 2px solid palevioletred;
+      }
+
+      a{
+        width: 200px;
+        height: 200px;
+        text-decoration: none;
+        background: darkgray;
+
+        /* 文字水平/垂直居中 */
+        line-height: 200px;
+        text-align: center;
+
+        color: whitesmoke;
+        display: block;
+      }
+      a:hover{
+        background: #4158D0;
+      }
+
+      /* 利用相对定位移动a标签 */
+      .a2, .a4{
+        position: relative;
+        /* 以左上角为基准点，第四象限坐标轴为正方向 */
+        top: -200px;
+        left: 400px;
+      }
+      /*.a4{*/
+      /*  position: relative;*/
+      /*  top: -200px;*/
+      /*  left: 400px;*/
+      /*}*/
+      .a5{
+        position: relative;
+        top: -600px;
+        left: 200px;
+      }
+    </style>
+
+</head>
+
+
+<body>
+
+<div id="box">
+  <a href="#" class="a1">Mainer</a>
+  <a href="#" class="a2">Aider-1</a>
+  <a href="#" class="a3">Aider-2</a>
+  <a href="#" class="a4">Aider-3</a>
+  <a href="#" class="a5">Aider-4</a>
+</div>
+
+</body>
+</html>
