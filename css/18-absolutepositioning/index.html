@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Absolute Positioning</title>
+
+    <!-- 绝对定位
+    1. 没有父级元素的情况下，相对于浏览器定位
+    2. 有父级元素则是相对于父级元素定位-->
+    <style>
+        body{
+            padding: 20px;
+        }
+
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+
+        #father{
+            border: 1px solid palevioletred;
+            padding: 0;
+            position: relative;
+        }
+
+        #first{
+            background-color: darkgray;
+            border: 1px dashed palevioletred;
+
+            position: absolute;
+            right: 50px;
+            bottom: 30px;
+
+        }
+        #second{
+            background-color: darkgray;
+            border: 1px dashed palevioletred;
+        }
+        #third{
+            background-color: darkgray;
+            border: 1px dashed palevioletred;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div id="father">
+    <div id="first" >First Div</div>
+    <div id="second" >Second Div</div>
+    <div id="third" >Third Div</div>
+</div>
+
+</body>
+</html>
